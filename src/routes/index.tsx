@@ -3,7 +3,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AppShell } from '../layout/AppShell';
 import { ProtectedRoute } from '../auth/ProtectedRoute';
 
-const LoginPage = lazy(() => import('../pages/Login'));
+const LoginPage = lazy(() => import('../pages/login'));
+const DashboardPage = lazy(() => import('../pages/dashboard'));
+
 
 const router = createBrowserRouter([
   {
